@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>함수</title>
+<script>
+function adder(a, b)
+{
+	var value;
+	value = a+b;
+	return value;
+}
+function miner(a, b)
+{
+	var value;
+	value = a-b;
+	return value;
+}
+function multer(a, b)
+{
+	var value;
+	value = a*b;
+	return value;
+}
+function order(a, b)
+{
+	var value;
+	value = a/b;
+	return value;
+}
+</script>
+</head>
+<body>
+<h3>함수 adder()</h3>
+<hr>
+<script>
+var a = adder(12, 3), b = miner(12, 3), c = multer(12, 3), d = order(12, 3);
+document.write("12 + 3 = " + a + "<br>");
+document.write("12 - 3 = " + b + "<br>");
+document.write("12 x 3 = " + c + "<br>");
+document.write("12 / 3 = " + d + "<br>");
+</script>
+</body>
+</html>

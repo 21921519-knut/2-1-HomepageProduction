@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>switch 예제 3</title>
+</head>
+<body>
+<h3>switch 예제 3</h3>
+<hr>
+<script>
+do {
+	var x = parseInt(prompt("x를 입력하세요", ""));
+	var y = parseInt(prompt("y를 입력하세요", ""));
+} while (isNaN(x) || isNaN(y) == true)
+var z = prompt("연산자를 입력하세요", "");
+switch(z) {
+	case "+" :
+		document.write(x + " + " + y + " = " + (x+y) + "<br><br>");
+		break;
+	case "-" :
+		document.write(x + " - " + y + " = " + (x-y) + "<br><br>");
+		break;
+	case "*" :
+		document.write(x + " * " + y + " = " + (x*y) + "<br><br>");
+		break;
+	case "/" :
+		document.write(x + " / " + y + " = " + (x/y) + "<br><br>");
+		break;
+	default :
+		document.write("없는 연산자 입니다.");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>16개의 랜덤한 색 만들기</title>
+<style>
+div { display : inline-block; width : 150px; padding : 10px; }
+</style>
+</head>
+<body>
+<h3>16개의 랜덤한 색 만들기</h3>
+<hr>
+<script>
+var RColor = new Array();
+var GColor = new Array();
+var BColor = new Array();
+for (var i = 0; i < 16; i++)
+{
+	RColor[i] = Math.floor(Math.random()*255);
+}
+for (var i = 0; i < 16; i++)
+{
+	GColor[i] = Math.floor(Math.random()*255);
+}
+for (var i = 0; i < 16; i++)
+{
+	BColor[i] = Math.floor(Math.random()*255);
+}
+for (var i = 0; i < 16; i++)
+{
+	document.write("<div style='background-color:rgb(" + RColor[i] + "," + GColor[i] + "," + BColor[i] + ")'>");
+	document.write("rgb(" + RColor[i] + "," + GColor[i] + "," + BColor[i] + ")");
+	document.write("</div>");
+}
+</script>
+</body>
+</html>

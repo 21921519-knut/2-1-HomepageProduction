@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>if 예제 3</title>
+</head>
+<body>
+<h3>if 예제 3</h3>
+<hr>
+<script>
+var max;
+var x = parseInt(prompt("첫번째 수를 입력하세요", ""));
+if (isNaN(x) == true)
+	x = 0;
+var y = parseInt(prompt("두번째 수를 입력하세요", ""));
+if (isNaN(y) == true)
+	y = 0;
+var z = parseInt(prompt("세번째 수를 입력하세요", ""));
+if (isNaN(z) == true)
+	z = 0;
+if (x > y)
+{
+	max = x;
+}
+else
+{
+	max = y;
+}
+if(max < z)
+{
+	max = z;
+}
+document.write("가장 큰 수는 " +  max + " 입니다.");
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>switch 예제 2</title>
+</head>
+<body>
+<h3>switch 예제 2</h3>
+<hr>
+<script>
+var grade;
+var score = prompt("점수를 입력하세요", "");
+score = parseInt(score);
+switch(parseInt(score/10)) {
+	case 10 :
+	case 9 :
+		grade = "A";
+		break;
+	case 8 :
+		grade = "B";
+		break;
+	case 7 :
+		grade = "C";
+		break;
+	default :
+		grade = "F";
+}
+document.write(score + "는 " + grade + "입니다.<br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>if 예제 2</title>
+</head>
+<body>
+<h3>if 예제 2</h3>
+<hr>
+<script>
+do {
+	var x = parseInt(prompt("수를 입력하세요", ""));
+	if (x % 2 == 0)
+	{
+		document.write("짝수입니다.");
+		break;
+	}
+	else if (x % 2 == 1)
+	{
+		document.write("홀수입니다.");
+		break;
+	}
+	else
+	{
+		alert("다시 입력해주세요.");
+	}
+} while (isNaN(x) == true)
+</script>
+</body>
+</html>

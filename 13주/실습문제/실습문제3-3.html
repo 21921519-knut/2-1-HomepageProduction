@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>실습문제 3-3</title>
+<script>
+function big(x)
+{
+	var maxi = 0;
+	while (x >= 10)
+	{
+		x = Math.floor(x/10);
+	}
+	maxi = x;
+	return maxi;
+}
+function small(x)
+{
+	var mini = 0;	
+	mini = x - (Math.floor(x/10)*10);
+	return mini;
+}
+</script>
+</head>
+<body>
+<h3>7번 문제</h3>
+<hr>
+<h3>큰 자리수와 낮은 자리수 같은 지 비교</h3>
+<hr>
+<script>
+var n = parseInt(prompt("숫자 입력", "0"));
+var a = big(n), b = small(n);
+if (a == b)
+{
+	document.write(n + ": 성공");
+}
+else
+{
+	document.write(n + ": 다름");
+}
+</script>
+</body>
+</html>
